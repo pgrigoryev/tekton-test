@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineRun
 metadata:
-  name: application-pipeline-run
+  name: application-pipeline-run2
 spec:
   pipelineRef:
     name: application-pipeline
@@ -15,7 +15,7 @@ spec:
     - name: pathToYamlFile
       value: "deploy.yaml"
     - name: "imageUrl"
-      value: "private-docker-registry.kube-system:5000/app"
+      value: "registry.hub.docker.com/taroball/taro1"
     - name: "imageTag"
-      value: "0.0.1"
+      value: "0.0.2"
   serviceAccountName: service-account
