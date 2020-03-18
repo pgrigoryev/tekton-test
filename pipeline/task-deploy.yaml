@@ -23,7 +23,7 @@ spec:
   steps:
     - name: update-yaml
       image: alpine
-      command: ["cat"]
+      command: ["sed"]
       args:
         - "-i"
         - "-e"
