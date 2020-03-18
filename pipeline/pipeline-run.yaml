@@ -17,5 +17,5 @@ spec:
     - name: "imageUrl"
       value: "registry.hub.docker.com/taroball/taro1"
     - name: "imageTag"
-      value: "0.0.2"
+      value: "0.0.5"
   serviceAccountName: service-account

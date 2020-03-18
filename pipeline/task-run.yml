@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: deploy-application-task-run-3
+spec:
+  resources:
+    - name: git-source
+      type: git
+  serviceAccountName: service-account
+  taskRef:
+    name: deploy-application
