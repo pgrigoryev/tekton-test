@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
   ua = req.get('user-agent')
   ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   content = `${currentDate} <br> ${ip} - ${ua}<br> `
-  res.send(head+ content + system_info+butt);
+  res.send(`${head} ${content} <h2>${system_info}</h2> ${butt}`);
   console.log(`${currentDate} - ${ip} - ${ua}`)
 });
 console.log(system_info);
