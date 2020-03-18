@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineRun
 metadata:
-  name: application-pipeline-run6
+  name: application-pipeline-run7
 spec:
   pipelineRef:
     name: application-pipeline
@@ -17,5 +17,5 @@ spec:
     - name: "imageUrl"
       value: "registry.hub.docker.com/taroball/taro1"
     - name: "imageTag"
-      value: "0.0.5"
+      value: "latest"
   serviceAccountName: service-account

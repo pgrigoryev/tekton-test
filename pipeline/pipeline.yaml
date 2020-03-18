@@ -18,7 +18,7 @@ spec:
       default: deploy_target
     - name: imageTag
       description: Tag to apply to the built image
-      default: 0.0.5
+      default: latest
   tasks:
   - name: build-image-from-source
     taskRef:
